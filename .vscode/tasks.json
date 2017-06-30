@@ -3,14 +3,24 @@
     "command": "dotnet",
     "isShellCommand": true,
     "args": [],
-    "tasks": [
-        {
+    "tasks": [{
             "taskName": "build",
             "args": [
                 "${workspaceRoot}/src/Home.SmartMeter/Home.SmartMeter.csproj"
             ],
             "isBuildCommand": true,
             "problemMatcher": "$msCompile"
+        },
+        {
+            "taskName": "test",
+            "args": [
+                "${workspaceRoot}/tests/Home.SmartMeter.Tests/Home.SmartMeter.Tests.csproj"
+            ],
+            "isTestCommand": true,
+            "showOutput": "always",
+            "problemMatcher": "$msCompile"
         }
+
+
     ]
 }
