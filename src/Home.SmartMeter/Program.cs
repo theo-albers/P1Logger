@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO.Ports;
 
 namespace Home.SmartMeter
 {
@@ -6,7 +7,13 @@ namespace Home.SmartMeter
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Home Smart Meter - P1 Logger");
+
+            var names = SerialPort.GetPortNames();
+            foreach (var name in names)
+            {
+                Console.WriteLine($"Serialport {name}");
+            }
         }
     }
 }
