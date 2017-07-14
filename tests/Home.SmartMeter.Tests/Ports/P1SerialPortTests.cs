@@ -1,5 +1,9 @@
 using System;
 using Xunit;
+using System.IO.Ports;
+using System.Threading.Tasks;
+using System.IO;
+using System.Text;
 
 namespace Home.SmartMeter.Ports
 {
@@ -13,3 +17,4 @@ namespace Home.SmartMeter.Ports
         }
     }
 }
+
