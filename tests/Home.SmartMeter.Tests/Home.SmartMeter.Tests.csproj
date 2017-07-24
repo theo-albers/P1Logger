@@ -12,9 +12,10 @@
     <PackageReference Include="Moq" Version="4.7.63"/>
     <PackageReference Include="System.IO.Ports" Version="4.4.0-preview2-25405-01"/>
     <DotNetCliToolReference Include="dotnet-xunit" Version="2.3.0-beta3-build3705"/>
+    <ProjectReference Include="..\..\src\Home.SmartMeter\Home.SmartMeter.csproj"/>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\src\Home.SmartMeter\Home.SmartMeter.csproj"/>
+    <None Update="TestData\**\*" CopyToOutputDirectory="PreserveNewest" />
   </ItemGroup>
 
 </Project>

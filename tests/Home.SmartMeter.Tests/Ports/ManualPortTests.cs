@@ -18,8 +18,6 @@ namespace Home.SmartMeter.Tests
                 {
                     Console.WriteLine($"Error: {y.EventType}");
                 };
-                //var task = new Task(() => ReadSomeTelegrams(serialPort, 60)); // 
-                //task.Start();
                 var task = Task.Factory.StartNew(() => ReadSomeTelegrams(serialPort, secondsToRead));
 
                 task.Wait();
